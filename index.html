@@ -15,7 +15,7 @@
                 <h2 class="title-coluna1">Welcome back!</h2>
                 <p class="descricao-coluna1">To keep connected with us</p>
                 <p class="descricao-coluna1">please login with your personal info</p>
-                <button>SIGN IN</button>
+                <button id="entrar">SIGN IN</button>
             </div>
             <div class="coluna2">
                 <h2 class="title-coluna2">Create Account</h2>
@@ -28,19 +28,25 @@
                 <form class="form">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
-                        <input class="input" type="text" placeholder="Name">
+                        <input id="name" class="input" type="text" placeholder="Name">
                     </label>
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input class="input"type="email" placeholder="Email">
+                        <input id="email" class="input" placeholder="Email">
+                    </label>
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input id="confEmail" class="input" placeholder="Confirm Email">
                     </label>
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input class="input" type="password" placeholder="Password" class="password">
+                        <input id="password" class="input" type="password" placeholder="Password">
                     </label>
-                        <button>SIGN UP</button>
+                        <button id="criar">SIGN UP</button>
                 </form>
             </div>
         </div>
+        <script type="module" src="./index.js">
+        </script>
     </body>
 </html>
