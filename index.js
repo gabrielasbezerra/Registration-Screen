@@ -19,10 +19,15 @@ btnCriar.addEventListener('click', function(e){
     const confPassValue = document.querySelector ("#confPass").value;
     const nameValue = document.querySelector ("#name").value;
 
-    if (emailValue === confEmailValue & passwordValue ===  confPassValue & nameValue != '') {
-        window.open("welcome.html")
+    if (emailValue === confEmailValue) {
+        if (passwordValue === confPassValue){
+            if (nameValue != ''){ window.open("welcome.html")
+            }
+            else{alert("Favor preencher todos os campos.")}
         }
-        else {alert("Campo vazio e/ou Credenciais inválidas")}
+        else{alert("Confirmação de senha não corresponde a senha cadastrada, digite novamente.")}
+        }
+    else{alert("Confirmação de Email não corresponde ao email cadastrado, digite novamente.")}
 });
 
 const btnDark = document.getElementById ("btn");
