@@ -24,3 +24,9 @@ btn2.addEventListener("click", function(e){
     }
     else (alert("Usuário Inexistente"))
 });
+
+const btnDark = document.getElementById ("btn");
+
+btnDark.addEventListener("change", (e) => {
+    document.body.classList.toggle("dark", e.target.checked);
+})

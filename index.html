@@ -11,6 +11,8 @@
 
     <body>
         <div class="container">
+            <input type="checkbox" id="btn" name="btn" class="botaodark">
+            <label class="btndark" for="btn"></label>
             <div class="coluna1">
                 <h2 class="title-coluna1">Welcome back!</h2>
                 <p class="descricao-coluna1">To keep connected with us</p>
@@ -25,7 +27,7 @@
                     <li><i class="fab fa-linkedin-in"></i></li>
                 </ul>
                 <p class="descricao-coluna2">or use your email for registration:</p>
-                <form class="form">
+                <form class="form" id="myForm">
                     <label class="label-input" for="">
                         <i class="far fa-user icon-modify"></i>
                         <input id="name" class="input" type="text" placeholder="Name">
@@ -42,11 +44,16 @@
                         <i class="fas fa-lock icon-modify"></i>
                         <input id="password" class="input" type="password" placeholder="Password">
                     </label>
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input id="confPass" class="input" type="password" placeholder="Confirm Password">
+                    </label>
                         <button id="criar">SIGN UP</button>
                 </form>
             </div>
         </div>
         <script type="module" src="./index.js">
+            localStorage
         </script>
     </body>
 </html>

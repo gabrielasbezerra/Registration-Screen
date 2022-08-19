@@ -17,12 +17,23 @@ button{
     margin-top: 20px;
 }
 
+body {
+    transition: background 0.5s linear, color 0.5s linear;
+    background-color: #ecf0f1;
+}
+
+body.dark {
+    background-color: #505253;
+}
+
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #ecf0f1;
+    transition: 0.5s;
+   
 }
 
 .coluna1{
@@ -35,7 +46,9 @@ button{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
+
+    }
+
 
 .coluna2 {
     border-top-right-radius: 15px;
@@ -106,3 +119,37 @@ button:hover {
     background-color: #ef865d;
     color:white;
 }
+
+.btndark {
+    background-color: #505253;
+    border-radius: 40%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.5s linear;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+
+}
+
+body.dark .btndark {
+    background-color: #ecf0f1;
+}
+
+.botaodark {
+    visibility: hidden;
+}
+
+.dark .container {background-color: #505253;}
+.dark .coluna1 {background-color: #ff4800;}
+.dark button {background-color: #ff4800;}
+.dark .title-coluna2 {color: #ff4800;}
+.dark button:hover {
+    color:black;}
+.dark .coluna2 {background-color: #bdc1c2;}
+.dark .redes i {border: solid 1px #454748;}
+.dark .label-input {background-color: #9da1a3; border: none}
+.dark .input {background-color:#9da1a3 ;}
