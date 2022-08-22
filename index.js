@@ -35,3 +35,31 @@ const btnDark = document.getElementById ("btn");
 btnDark.addEventListener("change", (e) => {
     document.body.classList.toggle("dark", e.target.checked);
 })
+
+
+
+/* 
+    function cadastro (){
+    var name = document.getElementById ("name");
+    var email = document.getElementById ("email");
+    var confEmail = document.getElementById ("confEmail");
+    var password = document.getElementById ("password");
+    var confPass = document.getElementById ("confPass");
+
+    var dados = localStorage.getItem("dadosCadastro")
+    
+    if (dados == null){
+        localStorage.setItem("dadosCadastro", "[]");
+        dados = [];
+    }
+    var auxRegistro = {
+        emailValue: email.value,
+        confEmailValue : confEmail.value,
+        passwordValue : password.value,
+        confPassValue : confPass.value,
+        nameValue : nameValue.value   
+    }
+    dados.push(auxRegistro);
+    localStorage.setItem("dadosCadastro", JSON.stringify(dados));
+
+}*/

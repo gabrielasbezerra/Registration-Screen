@@ -130,13 +130,13 @@ body.dark .btndark {
     visibility: hidden;
 }
 
-.dark .container {background-color: #505253;}
+.dark .container {background-color: #353738;}
 .dark .coluna1 {background-color: #ff4800;}
 .dark button {background-color: #ff4800;}
 .dark .title-coluna2 {color: #ff4800;}
 .dark button:hover {
     color:black;}
-.dark .coluna2 {background-color: #bdc1c2;}
+.dark .coluna2 {background-color: white;}
 .dark .redes i {border: solid 1px #454748;}
-.dark .label-input {background-color: #9da1a3; border: none}
-.dark .input {background-color:#9da1a3 ;}
+.dark .label-input {background-color: #ecf0f1; border: none}
+.dark .input {background-color:#ecf0f1 ;}

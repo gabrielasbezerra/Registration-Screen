@@ -124,18 +124,17 @@ button:hover {
     background-color: #505253;
     border: 1px solid;
     border-radius: 10px;
-    justify-content: left;
-    align-items: flex-end;
-    display: flex;
     width: 40px;
     height: 15px;
     cursor: pointer;
     user-select: none;
     transition: background 0.5s linear;
+    display: flex;
     position: fixed;
     bottom: 10px;
     margin-bottom: 8rem;
 }
+
 
 body.dark .btndark {
     background-color: #ecf0f1;
@@ -144,14 +143,13 @@ body.dark .btndark {
 .botaodark {
     visibility: hidden;
 }
-
-.dark .container {background-color: #505253;}
+.dark .container {background-color: #353738;}
 .dark .coluna1 {background-color: #ff4800;}
 .dark button {background-color: #ff4800;}
 .dark .title-coluna2 {color: #ff4800;}
 .dark button:hover {
     color:black;}
-.dark .coluna2 {background-color: #bdc1c2;}
+.dark .coluna2 {background-color: white;}
 .dark .redes i {border: solid 1px #454748;}
-.dark .label-input {background-color: #9da1a3; border: none}
-.dark .input {background-color:#9da1a3 ;}
+.dark .label-input {background-color: #ecf0f1; border: none}
+.dark .input {background-color:#ecf0f1 ;}
