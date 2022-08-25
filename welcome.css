@@ -12,6 +12,24 @@ body {
     height: 100vh;
 }
 
+button:hover {
+    background-color: #ef865d;
+    color:white;
+}
+button {
+    border-radius: 15px;
+    border: white solid 1px;
+    background-color: #FFA07A;
+    padding: 10px 10px;
+    color: white;
+    font-weight: bold;
+    position:absolute; 
+    top:90%;
+    left:90%;
+    
+    
+    
+}
 .title {
     color: white;
     font-weight: bolder;

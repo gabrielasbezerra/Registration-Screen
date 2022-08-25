@@ -80,6 +80,11 @@ button{
     padding: 5px;
     border: none;
 }
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
 
 ul{
     display: flex;
@@ -96,10 +101,27 @@ li{
     font-size: 15px;
 }
 
+form, p {
+    margin: 5px;
+}
 .input{
     border: none;
     background-color: #ecf0f1;
     padding-left: 5px;
+}
+
+#msgError {
+    text-align: center;
+    color: #ff0000;
+    background-color: #FFA07A ;
+    border-radius: 4px;
+    display: none;
+}
+
+#msgSucess {
+    text-align: center;
+    color: #00bb00;
+    display: none;
 }
 
 button:hover {
@@ -116,10 +138,9 @@ button:hover {
     cursor: pointer;
     user-select: none;
     transition: background 0.5s linear;
-    display: flex;
-    position: fixed;
-    bottom: 10px;
-    margin-bottom: 8rem;
+    position:absolute; 
+    top:95%;
+    left:95%;
 }
 
 body.dark .btndark {

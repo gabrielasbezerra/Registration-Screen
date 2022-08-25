@@ -25,29 +25,38 @@
                     <li><i class="fab fa-linkedin-in"></i></li>
                 </ul>
                 <p class="descricao-coluna2">or use your email for registration:</p>
+                <div id="msgError"></div>
+                <div id="msgSucess"></div>
                 <form class="form" id="myForm">
-                    <label class="label-input" for="">
+                    <label id="labelNome" class="label-input" for="nome">
                         <i class="far fa-user icon-modify"></i>
-                        <input id="name" class="input" type="text" placeholder="Name">
+                        <input id="nome" class="input" type="text" placeholder="Name">
                     </label>
-                    <label class="label-input" for="">
+
+                    <label id="labelEmail" class="label-input" for="email">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input id="email" class="input" type="text" placeholder="Email">
+                        <input id="email" class="input" type="email" placeholder="Email">
                     </label>
-                    <label class="label-input" for="">
+
+                    <label id="labelConfEmail" class="label-input" for="confEmail">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input id="confEmail" class="input" type="text" placeholder="Confirm Email">
+                        <input id="confEmail" class="input" type="email" placeholder="Confirm Email">
                     </label>
-                    <label class="label-input" for="">
+                    
+                    <label id="labelSenha" class="label-input" for="senha">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input id="password" class="input" type="text" placeholder="Password">
+                        <input id="senha" class="input" type="password" placeholder="Password">
                     </label>
-                    <label class="label-input" for="">
+
+                    <label id="labelConfSenha" class="label-input" for="confSenha">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input id="confPass" class="input" type="text" placeholder="Confirm Password">
+                        <input id="confSenha" class="input" type="password" placeholder="Confirm Password">
                     </label>
-                        <button type="button" onclick="cadastro()" id="criar">SIGN UP</button>
+
+                        <button onclick="cadastrar()" id="criar">SIGN UP</button>
+
                     <input type="checkbox" id="btn" name="btn" class="botaodark">
+
                     <label class="btndark" for="btn"></label>
                 </form>
 
